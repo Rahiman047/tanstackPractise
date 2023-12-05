@@ -7,15 +7,17 @@ import { fetchEmployees } from "./customFetch";
 import GetEmployee from "./GetEmployee";
 
 function App() {
+  const userSubmitted = () => {};
+
   return (
     <>
       <h1>Employee's List</h1>
       <form onSubmit={userSubmitted}>
         <label>Name : </label>
-        <input type="text" />
+        <input type="text" required />
         <div>
           <button
-            type="button"
+            type="submit"
             style={{ marginTop: "5px", marginLeft: "12px" }}
           >
             Click to add
